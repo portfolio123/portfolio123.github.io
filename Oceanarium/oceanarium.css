@@ -1,0 +1,786 @@
+﻿html { overflow-x: hidden; }
+a{
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:none;
+}
+ul{
+	list-style:none;
+}
+body{
+	line-height:1.5;
+	font-family:'Open Sans', sans-serif;
+	font-size:14px;
+}
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+@mixin clearfix() {
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+/****** header *****/
+
+/* Slideshow container */
+header {
+  position: relative;
+  background-size:100%;
+  
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+}
+.site-header {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+.navbar-brand {
+	color:#362d2a;
+	text-transform:uppercase;
+	font-size:25px;
+	text-transform:uppercase;
+	margin-top:20px;
+}
+.blue{
+	color:#71d7f9;
+	text-transform:uppercase;
+}
+#navbarNav{margin-left:240px;margin-top:20px;}
+#navbarNav ul li a {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #888;
+    line-height: 60px;
+}
+#navbarNav ul li a:hover {
+    color:#4169E0 ;
+}
+.title h1{
+	font-size:100px;
+	color:#fff;
+	margin-top:180px;
+	text-transform: uppercase;
+}
+.title h2{
+	font-size:50px;
+	color:#fff;
+}
+.welcome{
+	margin-top:70px;
+	padding:40px;
+	background:#f2f2f2;
+	border:1px solid #f2f2f2;
+	border-radius:10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+}
+.welcome h3{
+	color:#272727;
+	text-transform: uppercase;
+	font-size:48px;
+}
+/************* we_work **************/
+.we_work{
+	background:#f2f2f2;
+}
+.we_work h3{
+	color:#272727;
+	font-size:48px;
+	text-transform: uppercase;
+}
+.we_work h4{
+	color:#272727;
+	font-size:30px;
+	text-transform: uppercase;
+}
+.we_work p{
+	color:#272727;
+	font-size:14px;
+}
+.we_work img{
+	margin-left:90px;
+	width:200px;
+	height:195px;
+}
+.we_work button{
+	border-radius: 50%;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	width: 4px;
+	height: 15px;
+	background:black;
+	border:1px solid black;
+}
+.we_work button:hover{
+	border-radius: 50%;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	width: 4px;
+	height: 15px;
+	background:#31b1f7;
+	border:1px solid #31b1f7;
+}
+/*************** good_shark ***********/
+#good_shark img{
+    position: relative;
+}
+#good_shark p{
+	color:#fff;
+	font-size:18px;
+	text-transform: uppercase;
+	border:1px solid #fff;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	padding:5px;
+	background:;
+	opacity:0.7;
+	position:absolute;
+	margin-top:-100px;
+	margin-left:500px;
+}
+#good_shark p:hover{
+	color:#000;
+	cursor:pointer;
+}
+/************ future_events ***********/
+#future_events h3{
+	color:#272727;
+	font-size:48px;
+	text-transform: uppercase;
+}
+#future_events .navigation ul li {
+    display: inline-block;
+	padding-left: 100px;
+    padding-right: 100px;
+}
+#future_events .navigation  ul li a {
+	display: block;
+    font-size: 20px;
+    color: #888;
+}
+
+#future_events .navigation ul li a:hover {
+    color: #4169E0;
+}
+
+#future_events .navigationul li.active {
+    text-decoration:underline;
+}
+#future_events .navigationul li.active a {
+    color: #fff;
+}
+#future_events h4{
+	color:#fff;
+	font-size:16px;
+	text-transform: uppercase;
+}
+#future_events p{
+	color:grey;
+	font-size:12px;
+}
+#future_events h4:hover{
+	color:#4169E0 ;
+}
+.cont {
+    position: relative; 
+	margin-top:30px;
+	overflow: hidden;
+}
+.cont img {
+  transition: 0.5s;
+}
+.cont img:hover {
+  -moz-transform: scale(1.1,1.1);
+  -webkit-transform: scale(1.1,1.1);
+  -o-transform: scale(1.1,1.1);
+  -ms-transform: scale(1.1,1.1);
+}
+.cont .content {
+    position: absolute; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 100%; /* Full width */
+    padding: 2px; /* Some padding */
+	line-height:1;
+}
+/**************** todays_events *****/
+#todays_events h3{
+	color:#272727;
+	font-size:48px;
+	text-transform: uppercase;
+}
+#todays_events h5{
+	color:#b7b7b7;
+	font-size:14px;
+	font-weight:bold;
+	margin-left:40px;
+}
+#todays_events p{
+	margin-left:20px;
+}
+/********** meet_our_guides ***************/
+#meet_our_guides h3{
+	color:#272727;
+	font-size:48px;
+	text-transform: uppercase;
+}
+.cont1 {
+    position: relative; 
+}
+.cont1 .content1 {
+    position: absolute; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+	left:3px;
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 110%; /* Full width */
+    padding: 10px; /* Some padding */
+	line-height:1;
+}
+.cont1 .content1 h5{
+	color:#fff;
+	font-size:24px;
+}
+.cont1 .content1 p{
+	color:#01b2ec;
+	font-size:16px;
+	text-transform: uppercase;
+}
+.cont1 .content1 ul img{
+	width:50px;
+	height:50px;
+}
+.cont1 .content1 ul img:hover{
+	opacity:0.8;
+}
+/***************contact us*************/
+#contact_us h3{
+	color:#272727;
+	font-size:48px;
+	text-transform: uppercase;
+}
+#contact_us  h5{
+	color:##01b2ec;
+	font-size:24px;
+	text-transform: uppercase;
+	margin-left:20px;
+}
+#contact_us p{
+	margin-left:40px;
+}
+input,textarea {
+    border: none;
+	background:#f2f2f2;
+}
+
+div.contact-form input,div.contact-form textarea {
+    width: 720px;
+	height:50px;
+	margin-bottom:-10px;
+}
+
+div.contact-form textarea {
+    min-height: 140px;
+}
+
+div.contact-form input.mainBtn {
+    border: 0;
+    background: #01b2ec;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+	width:720px;
+	margin-left:40px;
+	border-radius:10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+}
+div.contact-form input.mainBtn:hover {
+    background:#87CEFA;
+}
+
+/****************** footer  **********************************/
+footer{
+	background:#22262e;
+	padding:20px 0;
+	margin-top:60px;
+}
+footer p{
+	font-size:14px;
+	color:#d3d4d5;
+}
+/**************** АДАПТИВ *********************/
+
+
+/****************   Смартфон 3.5*****************************/
+@media(min-width:0px) and (max-width:320px){
+	/****** header *****/
+	header{ 
+	height:700px;
+	background:#71d7f9;
+	}
+	#carouselExampleControls{display:none;}
+	.site-header {
+    top: 10px;
+	}
+	.navbar-brand {
+	font-size:20px;
+	margin-top:5px;
+	}
+	#navbarNav{
+	margin-left:20px;
+	margin-top:10px;
+	}
+	#navbarNav ul li a {
+    line-height: 20px;
+	}
+	.title h1{
+	font-size:40px;
+	margin-top:60px;
+	}
+	.title h2{
+	font-size:20px;
+	}
+	.welcome{
+	margin-top:20px;
+	padding:5px;
+	}
+	.welcome h3{
+	font-size:15px;
+	}
+	/************* we_work **************/
+	.we_work h3{
+	font-size:30px;
+	}
+	.we_work h4{
+	font-size:25px;
+	}
+	/*************** good_shark ***********/
+	#good_shark{ margin-left:-15px;}
+	#good_shark img{
+	position:relative;
+	width:300px;
+	height:150px;
+	}
+	#good_shark p{
+	margin-top:-60px;
+	margin-left:80px;
+	}
+	/************ future_events ***********/
+	#future_events h3{
+	font-size:30px;
+	}
+	#future_events .navigation ul li {
+	padding-left: 10px;
+    padding-right: 10px;
+	}
+	/**************** todays_events *****/
+	#todays_events h3{
+	font-size:30px;
+	}
+	.calendar img{width:300px;margin-left:-20px;}
+	/********** meet_our_guides ***************/
+	#meet_our_guides h3{
+	font-size:30px;
+	}
+	/***************contact us*************/
+	#contact_us h3{
+	font-size:30px;
+	}
+	#contact_us p{
+	margin-left:10px;
+	}
+	div.contact-form input,div.contact-form textarea {
+		width: 270px;
+	}
+	div.contact-form input.mainBtn {
+	width:270px;
+	margin-left:10px;
+	}
+	div.contact-form input.mainBtn:hover {
+    background:#87CEFA;
+	}
+	#contact_us h5{
+	font-size:20px;
+	margin-top:20px;
+	}
+	/****************** images   **********************/
+	.main:hover .blackFrame{
+	transform:translateY(-386px);
+	}
+}
+/****************   Смартфон 5.5*****************************/
+@media(min-width:321px) and (max-width:480px){
+	/****** header *****/
+	header{ 
+	height:700px;
+	background:#71d7f9;
+	}
+	#carouselExampleControls{display:none;}
+	.site-header {
+    top: 10px;
+	}
+	.navbar-brand {
+	font-size:20px;
+	margin-top:5px;
+	}
+	#navbarNav{
+	margin-left:20px;
+	margin-top:10px;
+	}
+	#navbarNav ul li a {
+    line-height: 20px;
+	}
+	.title h1{
+	font-size:40px;
+	margin-top:60px;
+	}
+	.title h2{
+	font-size:20px;
+	}
+	.welcome{
+	margin-top:20px;
+	padding:5px;
+	}
+	.welcome h3{
+	font-size:15px;
+	}
+	/************* we_work **************/
+	.we_work h3{
+	font-size:30px;
+	}
+	.we_work h4{
+	font-size:25px;
+	}
+	/*************** good_shark ***********/
+	#good_shark img{
+	position:relative;
+	width:420px;
+	height:150px;
+	}
+	#good_shark p{
+	margin-top:-60px;
+	margin-left:120px;
+	}
+	/************ future_events ***********/
+	#future_events h3{
+	font-size:30px;
+	}
+	#future_events img{
+	width:480px;
+	}
+	#future_events .navigation ul li {
+	padding-left: 10px;
+    padding-right: 10px;
+	}
+	/**************** todays_events *****/
+	#todays_events h3{
+	font-size:30px;
+	}
+	.calendar img{width:300px;margin-left:-20px;}
+	/********** meet_our_guides ***************/
+	#meet_our_guides h3{
+	font-size:30px;
+	}
+	.man img{
+	width:300px;
+	height:270px;
+	margin-left:70px;
+	}
+	.cont1 .content1 {
+	left:75px;
+    width: 294px; /* Full width */
+    padding:10px; /* Some padding */
+	}
+	.cont1 .content1 ul img{
+	width:35px;
+	height:35px;
+	}
+	/***************contact us*************/
+	#contact_us h3{
+	font-size:30px;
+	}
+	#contact_us p{
+	margin-left:10px;
+	}
+	div.contact-form input,div.contact-form textarea {
+		width: 400px;
+	}
+	div.contact-form input.mainBtn {
+	width:400px;
+	margin-left:10px;
+	}
+	div.contact-form input.mainBtn:hover {
+    background:#87CEFA;
+	}
+	#contact_us h5{
+	font-size:20px;
+	margin-top:20px;
+	margin-left:150px;
+	}
+	/****************** images   **********************/
+	#images{
+	margin-top:200px;
+}
+	.main{
+	width:480px;
+	}
+	.blackFrame{
+	width:480px;
+	}
+	.main:hover .blackFrame{
+	transform:translateY(-382px);
+	}
+	/******* footer ********/
+	footer{
+	margin-top:20px;
+	}
+}
+/****************   Планшет  *****************************/
+@media(min-width:481px) and (max-width:768px){
+	/****** header *****/
+	header img{height:700px;}
+	#navbarNav{
+	margin-left:20px;
+	margin-top:10px;
+	}
+	#navbarNav ul li a {
+    line-height: 20px;
+	}
+	.title h1{
+	font-size:40px;
+	margin-top:60px;
+	}
+	.title h2{
+	font-size:20px;
+	}
+	.welcome{
+	margin-top:20px;
+	padding:5px;
+	}
+	.welcome h3{
+	font-size:15px;
+	}
+	/************* we_work **************/
+	.we_work h3{
+	font-size:30px;
+	}
+	.we_work h4{
+	font-size:25px;
+	}
+	.we_work img{
+	margin-left:10px;
+	height:180px;
+	width:170px;
+	}
+	/*************** good_shark ***********/
+	#good_shark img{
+	position:relative;
+	width:700px;
+	height:300px;
+	margin-left:-90px;
+	}
+	#good_shark p{
+	margin-top:-90px;
+	margin-left:180px;
+	}
+	/************ future_events ***********/
+	#future_events h3{
+	font-size:30px;
+	}
+	#future_events .navigation ul li {
+	padding-left: 10px;
+    padding-right: 10px;
+	}
+	/**************** todays_events *****/
+	#todays_events h3{
+	font-size:30px;
+	}
+	.calendar img{
+	width:300px;
+	margin-left:-40px;
+	}
+	.session{margin-left:20px;}
+	/********** meet_our_guides ***************/
+	#meet_our_guides h3{
+	font-size:30px;
+	}
+	.man img{
+	width:300px;
+	}
+	/***************contact us*************/
+	#contact_us h3{
+	font-size:30px;
+	}
+	#contact_us p{
+	margin-left:10px;
+	}
+	div.contact-form input,div.contact-form textarea {
+		width: 350px;
+	}
+	div.contact-form input.mainBtn {
+	width:350px;
+	margin-left:10px;
+	}
+	div.contact-form input.mainBtn:hover {
+    background:#87CEFA;
+	}
+	#contact_us h5{
+	font-size:20px;
+	margin-top:20px;
+	margin-left:30px;
+	}
+	/****************** images   **********************/
+	#images{
+	margin-top:200px;
+}
+	.main{
+	width:400px;
+	}
+	.blackFrame{
+	width:480px;
+	}
+	.main:hover .blackFrame{
+	transform:translateY(-382px);
+	}
+	/******* footer ********/
+	footer{
+	margin-top:170px;
+	}
+}
+/****************   Ноутбук  *****************************/
+@media(min-width:769px) and (max-width:992px){
+	/****** header *****/
+	header img{height:700px;}
+	#navbarNav{
+	margin-left:20px;
+	margin-top:10px;
+	}
+	#navbarNav ul li a {
+    line-height: 20px;
+	}
+	.title h1{
+	font-size:40px;
+	margin-top:60px;
+	}
+	.title h2{
+	font-size:20px;
+	}
+	.welcome{
+	margin-top:20px;
+	padding:5px;
+	}
+	.welcome h3{
+	font-size:15px;
+	}
+	/************* we_work **************/
+	.we_work h3{
+	font-size:30px;
+	}
+	.we_work h4{
+	font-size:25px;
+	}
+	.we_work img{
+	margin-left:10px;
+	height:180px;
+	width:170px;
+	}
+	/*************** good_shark ***********/
+	#good_shark img{
+	position:relative;
+	width:900px;
+	height:300px;
+	margin-left:-90px;
+	}
+	#good_shark p{
+	margin-top:-90px;
+	margin-left:300px;
+	}
+	/************ future_events ***********/
+	#future_events h3{
+	font-size:30px;
+	}
+	#future_events .navigation ul li {
+	padding-left: 10px;
+    padding-right: 10px;
+	}
+	/**************** todays_events *****/
+	#todays_events h3{
+	font-size:30px;
+	}
+	.calendar img{
+	width:300px;
+	margin-left:-40px;
+	}
+	.session{margin-left:20px;}
+	/********** meet_our_guides ***************/
+	#meet_our_guides h3{
+	font-size:30px;
+	}
+	.cont1 {width:200px;}
+	.goga{width:820px;margin-left:-120px;}
+	.cont1 .content1 h5{
+	font-size:20px;
+	}
+	.cont1 .content1 ul img{
+	width:40px;
+	height:40px;
+	}
+	/***************contact us*************/
+	#contact_us h3{
+	font-size:30px;
+	}
+	#contact_us p{
+	margin-left:10px;
+	}
+	div.contact-form input,div.contact-form textarea {
+		width: 350px;
+	}
+	div.contact-form input.mainBtn {
+	width:350px;
+	margin-left:10px;
+	}
+	div.contact-form input.mainBtn:hover {
+    background:#87CEFA;
+	}
+	#contact_us h5{
+	font-size:20px;
+	margin-top:20px;
+	margin-left:30px;
+	}
+	/****************** images   **********************/
+	#images{
+	margin-top:200px;
+}
+	.main{
+	width:400px;
+	}
+	.blackFrame{
+	width:480px;
+	}
+	.main:hover .blackFrame{
+	transform:translateY(-382px);
+	}
+	/******* footer ********/
+	footer{
+	margin-top:170px;
+	}
+}
