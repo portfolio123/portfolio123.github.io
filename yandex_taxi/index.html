@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+  <link href="fontawesome/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <link href="css/my.css" rel="stylesheet">
+  <script src='js/jquery.js'></script>
+  <script src='js/jquery.autocomplete.js'></script>
+  <title>Taxi</title>
+
+</head>
+
+<body>
+
+  <header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3 col-md-12 col-sm-6 col-xs-6">
+          <h1><span>Я</span>ндекс <span class='header_taxi'>Таксі</span></h1>
+        </div>
+        <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+          <ul>
+            <li class='active'><a href='#'>Замовлення таксі</a></li>
+            <li><a href='#'>Служба підтримки</a></li>
+            <li><a href='#'>Як стати партнером</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 button">
+		  
+		  <!-- Trigger/Open The Modal -->
+			<button id="myBtn"><i class="fas fa-sign-in-alt"></i>Увійти</button>
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+			  <!-- Modal content -->
+				<div class="modal-content">
+				  <div class="modal-header">
+					<span class="close">&times;</span>
+					<h2>Я</h2>
+				  </div>
+				  <div class="modal-body">
+					<form action="html5.php">
+					   <input type="text" autocomplete="on" placeholder="Логін" required="required">
+					   <input name="pass" type="password" placeholder="Пароль" required="required">
+						<input type="submit" value="Уввійти">
+					</form>
+					<ul class='social-icons'>
+						<li><a href='#'><img src='img/f.png' alt='img'></a></li>
+						<li><a href='#'><img src='img/g.png' alt='img'></a></li>
+						<li><a href='#'><img src='img/in.png' alt='img'></a></li>
+						<li><a href='#'><img src='img/gl.png' alt='img'></a></li>
+					</ul>
+				  </div>
+				  <hr/>
+				  <div class="modal-footer">
+					<button>Згадати пароль</button>
+					<button>Реєстрація</button>
+				  </div>
+				</div>
+			</div>
+        
+		</div>
+      </div>
+    </div>
+  </header>
+  <!-- end header --->
+
+  <section id='map'>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+          <form action="html5.php">
+            <div class='form-input'>
+              <input type="text" name="city_from" id="city_from" placeholder="Звідки" value="" required="required"
+                onkeydown="if(event.keyCode==13) return false;" autocomplete="on">
+              <button><i class="fab fa-confluence"></i></button>
+              <input type="text" name="city_to" id="city_to" placeholder="Куди" value="" required="required"
+                onkeydown="if(event.keyCode==13) return false;" autocomplete="on">
+            </div>
+            <div class='form-link1'>
+              <a href='#'>Головний Вокзал...</a>
+              <a href='#'>Forum Lviv...</a>
+            </div>
+            <div class='form-tab'>
+              <div class="form-tab1 select">
+                <input class="select__input" type="hidden" name="">
+                <div class="select__head">На найближчий час</div>
+                <ul class="select__list" style="display: none;">
+                  <li class="select__item">На найближчий час</li>
+                  <li class="select__item">Через 10 хвилин</li>
+                  <li class="select__item">Через 30 хвилин</li>
+                </ul>
+              </div>
+              <div class="form-tab2">
+                <div class='form-tab2-img'><i class="fas fa-car"></i></div>
+                <select class="form-control">
+                  <option>Вимоги</option>
+                  <option>Вимоги 2</option>
+                  <option>Вимоги 3</option>
+                  <option>Вимоги 4</option>
+                  <option>Вимоги 5</option>
+                </select>
+              </div>
+              <div class="form-tab3">
+                <input type="tel" id="phone" name="phone" placeholder='Телефон'
+                  pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}" required>
+              </div>
+            </div>
+            <div class='form-link2'>
+				<a href='#'>Тарифи</a>
+				<div class='comments'>
+					<label class="link" for="hider" id="clickme">Коментар до змовлення</label>
+					<input type="checkbox" id="hider">
+					<div class="content"><textarea></textarea></div>
+				</div>
+				
+            </div>
+            <div class='form-rate'>
+				<div class="select">
+					<input class="select__input" type="hidden" name="">
+					<div class="select__head">Економ від 35 грн</div>
+					<ul class="select__list" style="display: none;">
+					  <li class="select__item">Економ від 45 грн</li>
+					  <li class="select__item">Економ від 55 грн</li>
+					  <li class="select__item">Business від 75 грн</li>
+					</ul>
+				</div>
+				<input type="submit" value="Викликати таксі" class="btn"/>
+            </div>
+			<p class='form-info'>Для розрахунку вартості поїздки заповніть поля «Звідки» і «Куди».</p>
+          </form>
+        </div>
+		<div class="col-lg-6 col-md-3 man">
+			  <p><input type="range" min="1" max="5" id="size" 
+				 oninput="sizePic()" value="3"></p>
+			  <p><img src="img/customer2.png" alt="img" id="pic"></p>
+		</div>
+		<div class="col-md-12 col-sm-12 col-xs-12">
+			<footer>
+				<ul>
+					<li><a href='#'>Uk</a></li>
+					<li><a href='#'>Про сервіс</a></li>
+					<li><a href='#'>Тарифи</a></li>
+					<li><a href='#'>Служби таксі</a></li>
+					<li><a href='#'>Угода користувача</a></li>
+					<li><a href='#'>Мобільна версія</a></li>
+				</ul>
+				<p>© 2020 «Яндекс-таксі»</p>
+			</footer>
+		</div>
+      </div>
+    </div>
+  </section>
+  <!-- end map --->
+	<script>
+   function sizePic() {
+    size = document.getElementById("size").value;
+    img = document.getElementById("pic");
+    img.width = 60 + 20*size;
+   }
+  </script>
+  <script src='js/my.js'></script>
+</body>
+
+</html>
