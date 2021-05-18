@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Jenkins</title>
+
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link href="my.css" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+</head>
+
+<body>
+	<div id='header'>
+		<header>
+			<a href='#' class='logo'><img src="img/logo_small.png" alt="img" /></a>
+			<div class='toggleMenu' onclick='toggleMenu();'></div>
+			<ul class='navigation'>
+				<li><a href='index.html'>Home</a></li>
+				<li><a href='#products'>Products</a></li>
+				<li><a href='#'>Blog</a></li>
+				<li><a href='#'>Contact</a></li>
+				<li>
+					<a href="javascript:void(0);" class='search'>
+					  <i class="fa fa-search"></i>
+					</a>
+					<a href="javascript:void(0);" class='user'>
+					  <i class="fa fa-user"></i>
+					</a>
+					<a href="shopping-cart.html">
+					  <i class="fa fa-shopping-cart">
+						<span class='num-cart-product'>0</span>
+					  </i>
+					</a>
+				</li>
+			</ul>
+		</header>
+
+		<!-- search -->
+		<div class="search-bar">
+			<div class="search-input">
+			  <input type='text' placeholder="Search for product">
+			  <a href='javascript:void(0);' class='search-cancel'>
+				<i class="fa fa-times"></i>
+			  </a>
+			</div>
+		</div>
+		
+		<!-- login -->
+		<div class="form">
+			<div class="login-form">
+			  <a href='javascript:void(0);' class='form-cancel'>
+				<i class="fa fa-times"></i>
+			  </a>
+			  <strong>Log In</strong>
+			  <form>
+				<input type='email' placeholder="Example@gmail.com" name='email' required>
+				<input type='password' placeholder="Password" name='password' required>
+				<input type='submit' value='Log In'>
+			  </form>
+		
+			  <div class='form-btns'>
+				<a href='#' class='forget'>Forget Your Password?</a>
+				<a href='javascript:void(0);' class='sign-up-btn'>Create Account</a>
+			  </div>
+			</div>
+		
+			<!-- sign up -->
+			<div class="sign-up-form">
+			  <a href='javascript:void(0);' class='form-cancel'>
+				<i class="fa fa-times"></i>
+			  </a>
+			  <strong>Sign Up</strong>
+			  <form>
+				<input type='text' placeholder="Full Name" name='fullname' required>
+				<input type='email' placeholder="Example@gmail.com" name='email' required>
+				<input type='password' placeholder="Password" name='password' required>
+				<input type='submit' value='Sign Up'>
+			  </form>
+		
+			  <div class='form-btns'>
+				<a href='javascript:void(0);' class='already-acount'>Already have Account?</a>
+			  </div>
+			</div>
+		</div>
+
+		<!-- content -->
+		<div class='content'>
+			<div class='contentBx'>
+				<h2>FAVORITES</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique repellat placeat nam neque
+					sapiente qui. Fugit atque odit impedit alias. Quos animi quisquam rem eveniet quis recusandae culpa
+					deleniti rerum.</p>
+				<a href='#' class='btn'>Get Started</a>
+			</div>
+		</div>
+		<ul class='sci'>
+			<li><a href='#'><img src='img/facebook.png' alt='img'></a></li>
+			<li><a href='#'><img src='img/twitter.png' alt='img'></a></li>
+			<li><a href='#'><img src='img/instagram.png' alt='img'></a></li>
+		</ul>
+	</div><!-- end header -->
+
+	<div id="products">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12 text-center">
+					<h3>Products</h3>
+					<h4>“ Lets see some awesome product Collection ”</h4>
+				</div>
+			</div>
+
+			<div class="col-md-2 col-sm-6 col-xs-12 text-left">
+				<ul class="list-inline pull-left">
+					<li>
+						<h5>Tags</h5>
+					</li>
+					<li><img src="img/tags.png" alt="img" /></li>
+				</ul>
+			</div>
+		</div>
+		<div id='section'>
+			<ul>
+				<li class='list active' data-filter='all'>All</li>
+				<li class='list' data-filter='popular'>Popular</li>
+				<li class='list' data-filter='sales'>Sales</li>
+				<li class='list' data-filter='seller'>Seller</li>
+			</ul>
+			<div class='product'>
+				<div class='itemBox popular'>
+					<img src='img/product3.png' alt='img' style="width:100%">
+					<div class="product_overlay">
+						<div class="overlay_content">
+							<a href="single_product.html">VIEW DETAIL</a>
+						</div>
+					</div>
+				</div>
+				<div class='itemBox sales'>
+					<img src='img/product1.png' alt='img' style="width:100%">
+					<div class="product_overlay">
+						<div class="overlay_content">
+							<a href="single_product.html">VIEW DETAIL</a>
+						</div>
+					</div>
+				</div>
+				<div class='itemBox popular'>
+					<img src='img/product3.png' alt='img' style="width:100%">
+					<div class="product_overlay">
+						<div class="overlay_content">
+							<a href="single_product.html">VIEW DETAIL</a>
+						</div>
+					</div>
+				</div>
+				<div class='itemBox seller'>
+					<img src='img/product4.png' alt='img' style="width:100%">
+					<div class="product_overlay">
+						<div class="overlay_content">
+							<a href="single_product.html">VIEW DETAIL</a>
+						</div>
+					</div>
+				</div>
+				<div class='itemBox popular'>
+					<img src='img/product3.png' alt='img' style="width:100%">
+					<div class="product_overlay">
+						<div class="overlay_content">
+							<a href="single_product.html">VIEW DETAIL</a>
+						</div>
+					</div>
+				</div>
+				<div class='itemBox popular'>
+					<img src='img/product3.png' alt='img' style="width:100%">
+					<div class="product_overlay">
+						<div class="overlay_content">
+							<a href="single_product.html">VIEW DETAIL</a>
+						</div>
+					</div>
+				</div>
+				<div class='itemBox seller'>
+					<img src='img/product5.png' alt='img' style="width:100%">
+					<div class="product_overlay">
+						<div class="overlay_content">
+							<a href="single_product.html">VIEW DETAIL</a>
+						</div>
+					</div>
+				</div>
+				<div class='itemBox sales'>
+					<img src='img/product1.png' alt='img' style="width:100%">
+					<div class="product_overlay">
+						<div class="overlay_content">
+							<a href="single_product.html">VIEW DETAIL</a>
+						</div>
+					</div>
+				</div>
+				<div class='itemBox sales'>
+					<img src='img/product2.png' alt='img' style="width:100%">
+					<div class="product_overlay">
+						<div class="overlay_content">
+							<a href="single_product.html">VIEW DETAIL</a>
+						</div>
+					</div>
+				</div>
+				<div class='itemBox seller'>
+					<img src='img/product5.png' alt='img' style="width:100%">
+					<div class="product_overlay">
+						<div class="overlay_content">
+							<a href="single_product.html">VIEW DETAIL</a>
+						</div>
+					</div>
+				</div>
+				<div class='itemBox seller'>
+					<img src='img/product4.png' alt='img' style="width:100%">
+					<div class="product_overlay">
+						<div class="overlay_content">
+							<a href="single_product.html">VIEW DETAIL</a>
+						</div>
+					</div>
+				</div>
+				<div class='itemBox sales'>
+					<img src='img/product1.png' alt='img' style="width:100%">
+					<div class="product_overlay">
+						<div class="overlay_content">
+							<a href="single_product.html">VIEW DETAIL</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end products -->
+
+	<div id="services">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-left">
+					<h5>Trade Services</h5>
+				</div>
+
+				<div class="col-md-3 col-sm-6 col-xs-6 text-center figure1">
+					<ul class="list-inline">
+						<li><img src="img/trade1.png" alt="img" /></li>
+						<li>
+							<h6>Business Identity</h6>
+						</li>
+					</ul>
+					<p class="bold_gray"> Verified, Build Trust</p>
+					<p>Display your verified status<br />
+						faster responses from supplies when verifie.</p>
+				</div>
+
+				<div class="col-md-3 col-sm-6 col-xs-6 text-center figure1">
+					<ul class="list-inline">
+						<li><img src="img/trade2.png" alt="img" /></li>
+						<li>
+							<h6>Business Identity</h6>
+						</li>
+					</ul>
+					<p class="bold_gray"> Verified, Build Trust</p>
+					<p>Display your verified status<br />
+						faster responses from supplies when verifie.</p>
+				</div>
+
+				<div class="col-md-3 col-sm-6 col-xs-6 text-center figure1">
+					<ul class="list-inline">
+						<li><img src="img/trade3.png" alt="img" /></li>
+						<li>
+							<h6>Business Identity</h6>
+						</li>
+					</ul>
+					<p class="bold_gray"> Verified, Build Trust</p>
+					<p>Display your verified status<br />
+						faster responses from supplies when verifie.</p>
+				</div>
+
+				<div class="col-md-3 col-sm-6 col-xs-6 text-center figure1">
+					<ul class="list-inline">
+						<li><img src="img/trade4.png" alt="img" /></li>
+						<li>
+							<h6>Business Identity</h6>
+						</li>
+					</ul>
+					<p class="bold_gray"> Verified, Build Trust</p>
+					<p>Display your verified status<br />
+						faster responses from supplies when verifie.</p>
+				</div>
+			</div>
+			<hr />
+		</div>
+	</div>
+	<!-- end services -->
+
+	<div id="friend">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12 text-center">
+					<nav>
+						<ul class="list-inline pull-center">
+							<li><a href="#" title="link"><img src="img/friend1.png" alt="img" /></a>
+							</li>
+							<li><a href="#" title="link"><img src="img/friend2.png" alt="img" /></a>
+							</li>
+							<li><a href="#" title="link"><img src="img/friend1.png" alt="img" /></a>
+							</li>
+							<li><a href="#" title="link"><img src="img/friend2.png" alt="img" /></a>
+							</li>
+							<li><a href="#" title="link"><img src="img/friend1.png" alt="img" /> </a>
+							</li>
+							<li><a href="#" title="link"><img src="img/friend2.png" alt="img" /></a>
+							</li>
+							<li><a href="#" title="link"><img src="img/friend1.png" alt="img" /></a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end  friend -->
+
+	<div id="sale">
+		<div class="container">
+			<div class="row">
+
+				<div id="regForm" action="/action_page.php">
+					<h1>Register:</h1>
+					<!-- One "tab" for each step in the form: -->
+					<div class="tab">Name:
+						<p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
+						<p><input placeholder="Last name..." oninput="this.className = ''" name="lname">
+						</p>
+					</div>
+					<div class="tab">Contact Info:
+						<p><input placeholder="E-mail..." oninput="this.className = ''" name="email">
+						</p>
+						<p><input placeholder="Phone..." oninput="this.className = ''" name="phone"></p>
+					</div>
+					<div class="tab">Login Info:
+						<p><input placeholder="Username..." oninput="this.className = ''" name="uname">
+						</p>
+						<p><input placeholder="Password..." oninput="this.className = ''" name="pword" type="password">
+						</p>
+					</div>
+					<div style="overflow:auto;">
+						<div style="float:right;">
+							<button class='btn' type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+							<button class='btn' type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+						</div>
+					</div>
+					<!-- Circles which indicates the steps of the form: -->
+					<div style="text-align:center;margin-top:40px;">
+						<span class="step"></span>
+						<span class="step"></span>
+						<span class="step"></span>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- end sale -->
+
+	<div id="posts">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12 text-center">
+					<h5>latest posts</h5>
+					<p>Latest posts show here</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 col-sm-4 col-xs-12">
+					<div class="cont">
+						<img src="img/post1.png" alt="Avatar" class="image">
+						<div class="overlay">Latest posts show here</div>
+					</div>
+					<div class='posts-text'>
+						<span>Top 15 Personalized Gift Ideas for Mom.</span>
+						<p>May 07, 2020</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-12">
+					<div class="cont">
+						<img src="img/post2.png" alt="Avatar" class="image">
+						<div class="overlay">Latest posts show here</div>
+					</div>
+					<div class='posts-text'>
+						<span>Top 15 Personalized Gift Ideas for Mom.</span>
+						<p>May 07, 2020</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-12">
+					<div class="cont">
+						<img src="img/post3.png" alt="Avatar" class="image">
+						<div class="overlay">Latest posts show here</div>
+					</div>
+					<div class='posts-text'>
+						<span>Top 15 Personalized Gift Ideas for Mom.</span>
+						<p>May 07, 2020</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end posts -->
+
+	<div class="feauture">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h4>Feauture Product</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 col-sm-6 col-xs-6 figure1">
+					<form method="post" action="">
+
+						<div class="form-select1">
+							<select>
+								<option value="" default selected>Women's Fashion</option>
+								<option>Men's Fashion</option>
+								<option>Jeweiry & Watches</option>
+								<option>Bags & Shoes</option>
+							</select>
+						</div>
+
+						<div class="form-select2">
+							<select>
+								<option value="" default selected>Shirts</option>
+								<option>Jackets</option>
+								<option>Jeans</option>
+								<option>Sweaters</option>
+								<option>Sunglasses</option>
+								<option>Belts</option>
+								<option>Pajama Sets</option>
+							</select>
+						</div>
+
+						<div class="form-select3">
+							<label>Price:</label><br>
+							<div class='none'>
+								<input type="number" placeholder="min">
+								<input type="number" placeholder="max">
+							</div>
+						</div>
+
+						<input type="submit" value="Search">
+					</form>
+				</div>
+
+				<div class="col-md-3 col-sm-6 col-xs-6 figure1">
+					<figure class="snip1321 hover">
+						<img src="img/feauture3.png" alt="sq-sample26" />
+						<figcaption><i class="ion-upload"></i>
+							<h4>Inverness </h4>
+							<h2>McKenzie</h2>
+							<div class='img'>
+								<img src='img/feauture-img1.png' alt='img'>
+								<img src='img/feauture-img2.png' alt='img'>
+								<img src='img/feauture-img3.png' alt='img'>
+							</div>
+						</figcaption>
+					</figure>
+					<div class='feature-text'>
+						<p>Abominable Hoodie</p>
+						<div class='price'>
+							<h5>$40.00</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-3 col-sm-6 col-xs-6 figure1">
+					<figure class="snip1321 hover">
+						<img src="img/feauture2.png" alt="sq-sample26" />
+						<figcaption><i class="ion-upload"></i>
+							<h4>Inverness </h4>
+							<h2>McKenzie</h2>
+							<div class='img'>
+								<img src='img/feauture-img1.png' alt='img'>
+								<img src='img/feauture-img2.png' alt='img'>
+								<img src='img/feauture-img3.png' alt='img'>
+							</div>
+						</figcaption>
+					</figure>
+					<div class='feature-text'>
+						<p>Abominable Hoodie</p>
+						<div class='price'>
+							<h5>$40.00</h5>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-3 col-sm-6 col-xs-6 figure1">
+					<figure class="snip1321 hover">
+						<img src="img/feauture1.png" alt="sq-sample26" />
+						<figcaption><i class="ion-upload"></i>
+							<h4>Inverness </h4>
+							<h2>McKenzie</h2>
+							<div class='img'>
+								<img src='img/feauture-img1.png' alt='img'>
+								<img src='img/feauture-img2.png' alt='img'>
+								<img src='img/feauture-img3.png' alt='img'>
+							</div>
+						</figcaption>
+					</figure>
+					<div class='feature-text'>
+						<p>Abominable Hoodie</p>
+						<div class='price'>
+							<h5>$40.00</h5>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- feauture -->
+
+	<div class="bag" id='collections'>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h3>New Collections this Season</h3>
+				</div>
+			</div>
+			<div class="row fig">
+				<div class="col-md-3 col-sm-6 col-xs-6 figure1">
+					<figure class="snip0019">
+						<img src='img/bag1.png' alt='img'>
+						<figcaption>
+							<div>
+								<h2>If we wanted more <span>leisure</span></h2>
+							</div>
+							<div>
+								<p>We'd invent machines that do things less efficiently.</p>
+							</div>
+							<a href="#"></a>
+						</figcaption>
+					</figure>
+					<div class='bag-text'>
+						<p>Leather fashiionable bag</p>
+						<span>from $30.00</span>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-6 figure1">
+					<figure class="snip0019">
+						<img src='img/bag2.png' alt='img'>
+						<figcaption>
+							<div>
+								<h2>If we wanted more <span>leisure</span></h2>
+							</div>
+							<div>
+								<p>We'd invent machines that do things less efficiently.</p>
+							</div>
+							<a href="#"></a>
+						</figcaption>
+					</figure>
+					<div class='bag-text'>
+						<p>Leather fashiionable bag</p>
+						<span>from $30.00</span>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-6 figure1">
+					<figure class="snip0019">
+						<img src='img/bag3.png' alt='img'>
+						<figcaption>
+							<div>
+								<h2>If we wanted more <span>leisure</span></h2>
+							</div>
+							<div>
+								<p>We'd invent machines that do things less efficiently.</p>
+							</div>
+							<a href="#"></a>
+						</figcaption>
+					</figure>
+					<div class='bag-text'>
+						<p>Leather fashiionable bag</p>
+						<span>from $30.00</span>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-6 figure1">
+					<figure class="snip0019">
+						<img src='img/bag4.png' alt='img'>
+						<figcaption>
+							<div>
+								<h2>If we wanted more <span>leisure</span></h2>
+							</div>
+							<div>
+								<p>We'd invent machines that do things less efficiently.</p>
+							</div>
+							<a href="#"></a>
+						</figcaption>
+					</figure>
+					<div class='bag-text'>
+						<p>Leather fashiionable bag</p>
+						<span>from $30.00</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- bag -->
+
+	<div id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-6 col-xs-6 figure3">
+					<img src="img/logo_small.png" alt="img" />
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-6 figure3">
+					<a>FAQ</a>
+					<a>PRIVACY POLICY</a>
+					<a>TERMS & CONDITIONS</a>
+					<a>DELEVERY</a>
+					<a>CONTACT US</a>
+				</div>
+				<div class="col-md-5 col-sm-12 col-xs-12">
+					<p>MAILING LIST</p>
+					<input type="search" placeholder="Message">
+					<button class='btn'>SIGN UP</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--  footer -->
+	
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/my.js"></script>
+</body>
+
+</html>

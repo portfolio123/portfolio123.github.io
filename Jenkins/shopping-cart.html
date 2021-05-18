@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Jenkins</title>
+
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link href="my.css" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+</head>
+
+<body>
+	<div id='header'>
+		<header>
+			<a href='#' class='logo'><img src="img/logo_small.png" alt="img" /></a>
+			<div class='toggleMenu' onclick='toggleMenu();'></div>
+			<ul class='navigation'>
+				<li><a href='index.html'>Home</a></li>
+				<li><a href='#products'>Products</a></li>
+				<li><a href='#'>Blog</a></li>
+				<li><a href='#'>Contact</a></li>
+				<li>
+					<a href="javascript:void(0);" class='search'>
+					  <i class="fa fa-search"></i>
+					</a>
+					<a href="javascript:void(0);" class='user'>
+					  <i class="fa fa-user"></i>
+					</a>
+					<a href="shopping-cart.html">
+					  <i class="fa fa-shopping-cart">
+						<span class='num-cart-product'>0</span>
+					  </i>
+					</a>
+				</li>
+			</ul>
+		</header>
+
+		<!-- search -->
+		<div class="search-bar">
+			<div class="search-input">
+			  <input type='text' placeholder="Search for product">
+			  <a href='javascript:void(0);' class='search-cancel'>
+				<i class="fa fa-times"></i>
+			  </a>
+			</div>
+		</div>
+		
+		<!-- login -->
+		<div class="form">
+			<div class="login-form">
+			  <a href='javascript:void(0);' class='form-cancel'>
+				<i class="fa fa-times"></i>
+			  </a>
+			  <strong>Log In</strong>
+			  <form>
+				<input type='email' placeholder="Example@gmail.com" name='email' required>
+				<input type='password' placeholder="Password" name='password' required>
+				<input type='submit' value='Log In'>
+			  </form>
+		
+			  <div class='form-btns'>
+				<a href='#' class='forget'>Forget Your Password?</a>
+				<a href='javascript:void(0);' class='sign-up-btn'>Create Account</a>
+			  </div>
+			</div>
+		
+			<!-- sign up -->
+			<div class="sign-up-form">
+			  <a href='javascript:void(0);' class='form-cancel'>
+				<i class="fa fa-times"></i>
+			  </a>
+			  <strong>Sign Up</strong>
+			  <form>
+				<input type='text' placeholder="Full Name" name='fullname' required>
+				<input type='email' placeholder="Example@gmail.com" name='email' required>
+				<input type='password' placeholder="Password" name='password' required>
+				<input type='submit' value='Sign Up'>
+			  </form>
+		
+			  <div class='form-btns'>
+				<a href='javascript:void(0);' class='already-acount'>Already have Account?</a>
+			  </div>
+			</div>
+		</div>
+
+		<!-- content -->
+		<div class='content'>
+			<div class='contentBx'>
+				<h2>FAVORITES</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique repellat placeat nam neque
+					sapiente qui. Fugit atque odit impedit alias. Quos animi quisquam rem eveniet quis recusandae culpa
+					deleniti rerum.</p>
+				<a href='#' class='btn'>Get Started</a>
+			</div>
+		</div>
+		<ul class='sci'>
+			<li><a href='#'><img src='img/facebook.png' alt='img'></a></li>
+			<li><a href='#'><img src='img/twitter.png' alt='img'></a></li>
+			<li><a href='#'><img src='img/instagram.png' alt='img'></a></li>
+		</ul>
+	</div><!-- end header -->
+
+
+	<!-- cart-page -->
+	<div class='small-container cart-page'>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<table>
+						<tr>
+							<th>Product</th>
+							<th>Quantity</th>
+							<th>Subtotal</th>
+						</tr>
+						<tr>
+							<td>
+								<div class='cart-info'>
+									<img src='img/product1.png' alt='img'>
+									<div>
+										<p>Red Printed T-Shirt</p>
+										<small>Price: $50.00</small>
+										<br>
+										<a href='#'>Remove</a>
+									</div>
+								</div>
+							</td>
+				
+							<td><input type='number' value='1'></td>
+							<td>$50.00</td>
+						</tr>
+				
+						<tr>
+							<td>
+								<div class='cart-info'>
+									<img src='img/product2.png' alt='img'>
+									<div>
+										<p>Red Printed T-Shirt</p>
+										<small>Price: $50.00</small>
+										<br>
+										<a href='#'>Remove</a>
+									</div>
+								</div>
+							</td>
+				
+							<td><input type='number' value='1'></td>
+							<td>$50.00</td>
+						</tr>
+				
+						<tr>
+							<td>
+								<div class='cart-info'>
+									<img src='img/product3.png' alt='img'>
+									<div>
+										<p>Red Printed T-Shirt</p>
+										<small>Price: $50.00</small>
+										<br>
+										<a href='#'>Remove</a>
+									</div>
+								</div>
+							</td>
+				
+							<td><input type='number' value='1'></td>
+							<td>$50.00</td>
+						</tr>
+					</table>
+				
+					<div class='total-price'>
+						
+						<table>
+							<tr>
+								<td>Subtotal</td>
+								<td>$150.00</td>
+							</tr>
+							<tr>
+								<td>Tax</td>
+								<td>$20.00</td>
+							</tr>
+							<tr>
+								<td>Total</td>
+								<td>$170.00</td>
+							</tr>
+						</table>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-6 col-xs-6 figure3">
+					<img src="img/logo_small.png" alt="img" />
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-6 figure3">
+					<a>FAQ</a>
+					<a>PRIVACY POLICY</a>
+					<a>TERMS & CONDITIONS</a>
+					<a>DELEVERY</a>
+					<a>CONTACT US</a>
+				</div>
+				<div class="col-md-5 col-sm-12 col-xs-12">
+					<p>MAILING LIST</p>
+					<input type="search" placeholder="Message">
+					<button class='btn'>SIGN UP</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--  footer --->
+	
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/my.js"></script>
+</body>
+
+</html>
