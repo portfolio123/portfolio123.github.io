@@ -132,7 +132,7 @@ hr {
 .contact__items p {
 	padding: 5px 0;
 }
-.contact-icon {
+.contact {
 	display: flex;
 }
 .contact-icon img {
