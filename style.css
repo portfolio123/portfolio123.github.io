@@ -120,22 +120,23 @@ hr {
 	font-size: 24px;
 	margin-bottom: 20px;
 }
-.contact__item {
+.contact__items {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
-.contact__items {
+.contact__item {
 	flex-basis: 50%;
 	text-align: center;
 }
-.contact__items p {
-	padding: 5px 0;
+.contact__item p {
+	font-size: 14px;
+	line-height: 20px;
 }
 .contact {
 	display: flex;
 }
-.contact img {
+.contact .contact__icon img {
 	width: 12px;
 	height: 12px;
 }
