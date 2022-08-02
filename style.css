@@ -135,7 +135,7 @@ hr {
 .contact {
 	display: flex;
 }
-.contact-icon img {
+.contact img {
 	width: 12px;
 	height: 12px;
 }
