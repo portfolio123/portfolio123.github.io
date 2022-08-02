@@ -133,10 +133,10 @@ hr {
 	font-size: 18px;
 	line-height: 22px;
 }
-.contact {
+.contact-info {
 	display: flex;
 }
-.contact .contact__icon img {
+.contact-info img {
 	width: 20px;
 	height: 20px;
 }
@@ -159,7 +159,7 @@ hr {
 		width: 200px;
 		height: 300px;
 	}
-	.contact__items  {
+	.contact__item  {
 		flex-basis: 100%;
 		text-align: center;
 	}
