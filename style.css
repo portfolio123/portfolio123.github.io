@@ -135,7 +135,7 @@ hr {
 }
 .contact-info {
 	display: flex;
-	text-align: center;
+	justify-content: center;
 }
 .contact-info .contact-info__icon img {
 	width: 20px;
@@ -162,7 +162,6 @@ hr {
 	}
 	.contact__item  {
 		flex-basis: 100%;
-		text-align: center;
 	}
 }
 
