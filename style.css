@@ -127,7 +127,6 @@ hr {
 }
 .contact__item {
 	flex-basis: 50%;
-	text-align: center;
 }
 .contact__item p {
 	font-size: 18px;
