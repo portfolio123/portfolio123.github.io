@@ -132,6 +132,13 @@ hr {
 .contact__items p {
 	padding: 5px 0;
 }
+.contact-icon {
+	display: flex;
+}
+.contact-icon img {
+	width: 12px;
+	height: 12px;
+}
 
 /* @media */
 @media (max-width:600px) {
