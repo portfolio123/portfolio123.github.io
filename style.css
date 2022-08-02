@@ -136,7 +136,7 @@ hr {
 .contact-info {
 	display: flex;
 }
-.contact-info img {
+.contact-info .contact-info__icon img {
 	width: 20px;
 	height: 20px;
 }
