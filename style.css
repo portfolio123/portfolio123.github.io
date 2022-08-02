@@ -131,10 +131,11 @@ hr {
 }
 .contact__item p {
 	font-size: 18px;
-	line-height: 22px;
+	line-height: 30px;
 }
 .contact-info {
 	display: flex;
+	text-align: center;
 }
 .contact-info .contact-info__icon img {
 	width: 20px;
