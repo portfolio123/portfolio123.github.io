@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meetup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/jquery.magnific-popup.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class='header' id="header">
+        <div class='container'>
+            <div class='header__top'>
+    
+                <a class='logo' href='#'>
+                    <img class='logo__img' src='images/logo.png' alt='img'>
+                </a>
+                <nav class='menu'>
+                    <button class="menu__btn">
+                        <span></span>
+                    </button>
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="#header" class="menu__link">Home</a></li>
+                        <li class="menu__item"><a href="#about" class="menu__link">About Meetup</a></li>
+                        <li class="menu__item"><a href="#schedule" class="menu__link">Schedule</a></li>
+                        <li class="menu__item"><a href="#speakers" class="menu__link">Speakers</a></li>
+                        <li class="menu__item"><a href="#sponsors" class="menu__link">Sponsors</a></li>
+                        <li class="menu__item"><a href="#venue" class="menu__link">Venue</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
+                    </ul>
+                </nav>
+                <button class="header__btn">
+                    <img src='images/header-btn.png' alt='img'>
+                    Get Ticket
+                </button>
+            </div>
+        </div>
+    
+        <div class="header__content">
+            <div class="container">
+                <h1>Designer’s Meetup 2025</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit quis 
+                    dui lacus. Aenean purus ut ac sit. Nullam habitant at tempus ut. Enim 
+                    turpis sollicitudin magna nunc facilisis id commodo.</p>
+                <h3>02 Feb 2025<br><span>Bangabandhu International Conference Center</span></h3>
+                <a href="#banner">
+                    <img class="loader__img" src='images/circle-btn.png' alt='image'>
+                    <span class="loader"></span>
+                </a>
+            </div>
+        </div>
+    </header><!-- end header -->
+
+    <div class="banner" id="banner">
+        <div class="container">
+            <h2>Meet & Learn from <br>Community Leaders</h2>  
+            <div class="banner__items">
+                <div class="banner__item">
+                    <img src="images/banner-icon-1.png" alt="image">
+                    <p>40+ Speaker</p>
+                </div>
+                <div class="banner__item">
+                    <img src="images/banner-icon-2.png" alt="image">
+                    <p>60+ Session</p>
+                </div>
+                <div class="banner__item">
+                    <img src="images/banner-icon-3.png" alt="image">
+                    <p>3 Days Event</p>
+                </div>
+            </div>
+        </div>
+    </div><!-- end banner -->
+
+    <div class="about" id="about">
+        <div class="container"> 
+            <div class="about__content">
+          
+                <div class="about__text">
+                    <h3>About Meetup Event</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit quis 
+                    dui lacus. Aenean purus ut ac sit. Nullam habitant at tempus ut. Enim 
+                    turpis sollicitudin magna nunc facilisis odo.Lorem ipsum dolor sit 
+                    amet, consectetur adipiscing 
+                    sit quis dui lacus. Aenean purus ut ac sit.</p>
+                    <div class="about__items">
+                        <div class="about__item">
+                            <div class="about__item-img">
+                                <img src="images/about-icon-1.png" alt="image">
+                            </div>
+                            <div class="about__item-text">
+                                <h5>When</h5>
+                                <p>Friday to Sunday, 1-3 July 2022</p>
+                            </div>
+                        </div>
+                        <div class="about__item">
+                            <div class="about__item-img">
+                                <img src="images/about-icon-2.png" alt="image">
+                            </div>
+                            <div class="about__item-text">
+                                <h5>Location</h5>
+                                <p>Bangabandhu International Conference Center, 
+                                    Begum Rokeya Avenue, Dhaka-1207</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__btn">
+                        <button class="about__btn-1">
+                            <img src='images/about-btn.png' alt='img'>
+                            Get Ticket
+                        </button>
+                        <button class="about__btn-2">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+                <div class='slider'>
+                    <div class='slider__item'>
+                        <img src='images/about-slider-1.jpg' alt='img' class="slider__img-one" />
+                    </div>
+                    <div class='slider__item'>
+                        <img src='images/about-slider-2.jpg' alt='img' class="slider__img-two" />
+                    </div>
+                    <div class='slider__item'>
+                        <img src='images/about-slider-1.jpg' alt='img' class="slider__img-one" />
+                    </div>
+                    <div class='slider__item'>
+                        <img src='images/about-slider-2.jpg' alt='img' class="slider__img-two" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- end about -->
+
+    <div class="schedules" id="schedule">
+        <div class="container">
+            <h2>Event Schedules</h2>
+            <div class="schedules-tabs">
+                <div class="schedules-tabs__items">
+                    <a href="#tab-1" class="schedules-tabs__item schedules-tabs__item--active">Day 01</a>
+                    <a href="#tab-2" class="schedules-tabs__item">Day 02</a>
+                    <a href="#tab-3" class="schedules-tabs__item">Day 03</a>
+                </div>
+                <div class="schedules-tabs__contentbox">
+                    <div class="schedules-tabs__content schedules-tabs__content--active" id="tab-1">
+                        <ul class="schedules__box-list">
+                            <li class="schedules__box-item">
+                                8:00 AM
+                                <div class="schedules__box">
+                                    <div class="schedules__text">
+                                        <h3>Entry Registration & Continental Breakfast</h3>
+                                        <div class="time">
+                                            <p><img src='images/schedule-icon-1.png' alt='image'> 08:00 AM - 09:00 AM</p>
+                                            <p><img src='images/schedule-icon-2.png' alt='image'> Dining Hall</p>
+                                        </div>
+                                        <button class="schedules__btn">View Details</button>    
+                                    </div>
+                                    <div class="schedules__img">
+                                        <img src='images/schedule-person-1.png' alt='schedule-person'>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="schedules__box-item">
+                                9:00 AM
+                                <div class="schedules__box">
+                                    <div class="schedules__text">
+                                        <h3>Introduction Creative Design | Carrier Guideline</h3>
+                                        <div class="time">
+                                            <p><img src='images/schedule-icon-1.png' alt='image'> 09:00 AM - 10:00 AM</p>
+                                            <p><img src='images/schedule-icon-2.png' alt='image'> Hall of Fame 01</p>
+                                        </div>
+                                        <button class="schedules__btn">View Details</button>    
+                                    </div>
+                                    <div class="schedules__img">
+                                        <img src='images/schedule-person-2.png' alt='schedule-person'>
+                                        <img src='images/schedule-person-3.png' alt='schedule-person'>
+                                        <img src='images/schedule-person-4.png' alt='schedule-person'>
+                                        <img src='images/schedule-person-5.png' alt='schedule-person'>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="schedules__box-item">
+                                10:00 AM
+                                <div class="schedules__box">
+                                    <div class="schedules__text">
+                                        <h3>Introduction UX Design | Carrier Guideline</h3>
+                                        <div class="time">
+                                            <p><img src='images/schedule-icon-1.png' alt='image'> 10:00 AM - 12:00 PM</p>
+                                            <p><img src='images/schedule-icon-2.png' alt='image'> Hall of Fame 01</p>
+                                        </div>
+                                        <button class="schedules__btn">View Details</button>    
+                                    </div>
+                                    <div class="schedules__img">
+                                        <img src='images/schedule-person-2.png' alt='schedule-person'>
+                                        <img src='images/schedule-person-3.png' alt='schedule-person'>
+                                        <img src='images/schedule-person-4.png' alt='schedule-person'>
+                                        <img src='images/schedule-person-5.png' alt='schedule-person'>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="schedules-tabs__content" id="tab-2">
+                        <ul class="schedules__box-list">
+                            <li class="schedules__box-item">
+                                8:00 AM
+                                <div class="schedules__box">
+                                    <div class="schedules__text">
+                                        <h3>Entry Registration & Continental Breakfast</h3>
+                                        <div class="time">
+                                            <p><img src='images/schedule-icon-1.png' alt='image'> 08:00 AM - 09:00 AM</p>
+                                            <p><img src='images/schedule-icon-2.png' alt='image'> Dining Hall</p>
+                                        </div>
+                                        <button class="schedules__btn">View Details</button>    
+                                    </div>
+                                    <div class="schedules__img">
+                                        <img src='images/schedule-person-1.png' alt='schedule-person'>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="schedules__box-item">
+                                9:00 AM
+                                <div class="schedules__box">
+                                    <div class="schedules__text">
+                                        <h3>Introduction Creative Design | Carrier Guideline</h3>
+                                        <div class="time">
+                                            <p><img src='images/schedule-icon-1.png' alt='image'> 09:00 AM - 10:00 AM</p>
+                                            <p><img src='images/schedule-icon-2.png' alt='image'> Hall of Fame 01</p>
+                                        </div>
+                                        <button class="schedules__btn">View Details</button>    
+                                    </div>
+                                    <div class="schedules__img">
+                                        <img src='images/schedule-person-2.png' alt='schedule-person'>
+                                        <img src='images/schedule-person-3.png' alt='schedule-person'>
+                                        <img src='images/schedule-person-4.png' alt='schedule-person'>
+                                        <img src='images/schedule-person-5.png' alt='schedule-person'>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="schedules-tabs__content" id="tab-3">
+                        <ul class="schedules__box-list">
+                            <li class="schedules__box-item">
+                                8:00 AM
+                                <div class="schedules__box">
+                                    <div class="schedules__text">
+                                        <h3>Entry Registration & Continental Breakfast</h3>
+                                        <div class="time">
+                                            <p><img src='images/schedule-icon-1.png' alt='image'> 08:00 AM - 09:00 AM</p>
+                                            <p><img src='images/schedule-icon-2.png' alt='image'> Dining Hall</p>
+                                        </div>
+                                        <button class="schedules__btn">View Details</button>    
+                                    </div>
+                                    <div class="schedules__img">
+                                        <img src='images/schedule-person-1.png' alt='schedule-person'>
+                                        <img src='images/schedule-person-2.png' alt='schedule-person'>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="schedules__box-item">
+                                9:00 AM
+                                <div class="schedules__box">
+                                    <div class="schedules__text">
+                                        <h3>Introduction Creative Design | Carrier Guideline</h3>
+                                        <div class="time">
+                                            <p><img src='images/schedule-icon-1.png' alt='image'> 09:00 AM - 10:00 AM</p>
+                                            <p><img src='images/schedule-icon-2.png' alt='image'> Hall of Fame 01</p>
+                                        </div>
+                                        <button class="schedules__btn">View Details</button>    
+                                    </div>
+                                    <div class="schedules__img">
+                                        <img src='images/schedule-person-2.png' alt='schedule-person'>
+                                        <img src='images/schedule-person-3.png' alt='schedule-person'>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="schedules__box-item">
+                                10:00 AM
+                                <div class="schedules__box">
+                                    <div class="schedules__text">
+                                        <h3>Introduction UX Design | Carrier Guideline</h3>
+                                        <div class="time">
+                                            <p><img src='images/schedule-icon-1.png' alt='image'> 10:00 AM - 12:00 PM</p>
+                                            <p><img src='images/schedule-icon-2.png' alt='image'> Hall of Fame 01</p>
+                                        </div>
+                                        <button class="schedules__btn">View Details</button>    
+                                    </div>
+                                    <div class="schedules__img">
+                                        <img src='images/schedule-person-1.png' alt='schedule-person'>
+                                        <img src='images/schedule-person-2.png' alt='schedule-person'>
+                                        <img src='images/schedule-person-3.png' alt='schedule-person'>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div><!-- end schedules -->
+
+    <div class="speakers" id="speakers">
+        <div class="container">
+            <div class="speakers__inner">
+                <div class="speakers__name">
+                    <div class="speakers__name-item">
+                        <img src='images/speakers-1.png' alt='speakers'>
+                        <div class="speakers__name-text">
+                            <h5>Afolabi David</h5>
+                            <p>Designer Manager, IBM</p>
+                            <ul>
+                                <li><a href="#"><img src='images/speakers-in.png' alt='speakers'></a></li>
+                                <li><a href="#"><img src='images/speakers-insta.png' alt='speakers'></a></li>
+                                <li><a href="#"><img src='images/speakers-facebook.png' alt='speakers'></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="speakers__name-item">
+                        <img src='images/speakers-2.png' alt='speakers'>
+                        <div class="speakers__name-text">
+                            <h5>Brooklyn Simmons</h5>
+                            <p>Designer Manager, Google</p>
+                            <ul>
+                                <li><a href="#"><img src='images/speakers-in.png' alt='speakers'></a></li>
+                                <li><a href="#"><img src='images/speakers-insta.png' alt='speakers'></a></li>
+                                <li><a href="#"><img src='images/speakers-facebook.png' alt='speakers'></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="speakers__name-item">
+                        <img src='images/speakers-1.png' alt='speakers'>
+                        <div class="speakers__name-text">
+                            <h5>Afolabi David</h5>
+                            <p>Designer Manager, IBM</p>
+                            <ul>
+                                <li><a href="#"><img src='images/speakers-in.png' alt='speakers'></a></li>
+                                <li><a href="#"><img src='images/speakers-insta.png' alt='speakers'></a></li>
+                                <li><a href="#"><img src='images/speakers-facebook.png' alt='speakers'></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="speakers__content">
+                
+                    <div class="speakers__content-element">
+                        <h4>Meet with <br>
+                            Graeter's SPEAKERS</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit quis dui lacus. Aenean purus ut ac sit. Nullam habitant at tempus ut. Enim turpis sollicitudin magna nunc facilisis odo.Lorem ipsum dolor sit amet, consectetur adipiscing 
+                            sit quis dui lacus. Aenean purus ut ac sit.</p>
+                        <button class="speakers__btn">View Details</button>   
+                    </div>
+        
+                    <div class="speakers__content-element">
+                        <h4>Meet with <br>
+                            Graeter's SPEAKERS</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit quis dui lacus. Aenean purus ut ac sit. Nullam habitant at tempus ut. Enim turpis sollicitudin magna nunc facilisis odo.Lorem ipsum dolor sit amet, consectetur adipiscing 
+                            sit quis dui lacus. Aenean purus ut ac sit.</p>
+                        <button class="speakers__btn">View Details</button> 
+                    </div>
+
+                    <div class="speakers__content-element">
+                        <h4>Meet with <br>
+                            Graeter's SPEAKERS</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit quis dui lacus. Aenean purus ut ac sit. Nullam habitant at tempus ut. Enim turpis sollicitudin magna nunc facilisis odo.Lorem ipsum dolor sit amet, consectetur adipiscing 
+                            sit quis dui lacus. Aenean purus ut ac sit.</p>
+                        <button class="speakers__btn">View Details</button> 
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="event">
+        <div class="container">
+            <h5>Why you should Join</h5>
+            <h2>The Designer’s Meetup Event</h2>  
+            <div class="event__items">
+                <div class="event__item">
+                    <img src='images/event-icon-1.png' alt='event'>
+                    <h3>Networking</h3>
+                    <p>You will meet and Build your Networking scale with community peoples and helo to get 
+                        more tips and supports</p>
+                </div>
+                <div class="event__item">
+                    <img src='images/event-icon-2.png' alt='event'>
+                    <h3>New People</h3>
+                    <p>You will meet and Build your Networking scale with community peoples and helo to get 
+                        more tips and supports</p>
+                </div>
+                <div class="event__item">
+                    <img src='images/event-icon-3.png' alt='event'>
+                    <h3>Great Speaker</h3>
+                    <p>You will meet and Build your Networking scale with community peoples and helo to get 
+                        more tips and supports</p>
+                </div>
+                <div class="event__item">
+                    <img src='images/event-icon-4.png' alt='event'>
+                    <h3>Have Fun</h3>
+                    <p>You will meet and Build your Networking scale with community peoples and helo to get 
+                        more tips and supports</p>
+                </div>
+            </div>
+        </div>
+    </div><!-- end event -->
+
+    <div class="venue" id="venue">
+        <div class="container">  
+            <div class="venue__box">
+                <div class="venue__box-img">
+                    <div class="venue__img-overlay">
+                        <img src="images/venue-1.jpg" alt="venue" class="venue__img-one">
+                    </div>
+
+                    <div class="venue__img-overlay">
+                        <img src="images/venue-2.jpg" alt="venue" class="venue__img-two">
+                    </div>
+                </div>
+                <div class="venue__box-text">
+                    <h2>Explore Meetup Venue</h2>
+                    <h5>Bangabandhu International Conference Center (BICC)</h5>
+                    <p>Bangabandhu International Conference Center (BICC) is the only multi-purpose 
+                        convention facility in the country, having 17 (seventeen) venues for holding small 
+                        to large scale events</p>
+                    <button class="venue__btn-1">Get Direction</button>
+                    <button class="venue__btn-2">View Details</button>
+                </div>
+            </div>
+        </div>
+    </div><!-- end venue -->
+
+    <div class="sponsor" id="sponsors">
+        <div class="container">
+            <h2>Our Meetup Sponsor</h2>  
+            <div class="sponsor__items">
+                <div class="sponsor__item">
+                    <img src='images/sponsor-1.png' alt='sponsor'>
+                </div>
+                <div class="sponsor__item">
+                    <img src='images/sponsor-2.png' alt='sponsor'>
+                </div>
+                <div class="sponsor__item">
+                    <img src='images/sponsor-8.png' alt='sponsor'>
+                </div>
+                <div class="sponsor__item">
+                    <img src='images/sponsor-4.png' alt='sponsor'>
+                </div>
+                <div class="sponsor__item">
+                    <img src='images/sponsor-5.png' alt='sponsor'>
+                </div>
+                <div class="sponsor__item">
+                    <img src='images/sponsor-6.png' alt='sponsor'>
+                </div>
+                <div class="sponsor__item">
+                    <img src='images/sponsor-7.png' alt='sponsor'>
+                </div>
+                <div class="sponsor__item">
+                    <img src='images/sponsor-8.png' alt='sponsor'>
+                </div>
+                <div class="sponsor__item">
+                    <img src='images/sponsor-9.png' alt='sponsor'>
+                </div>
+            </div>
+            <button class="sponsor__btn">Became a Sponsor</button>   
+        </div>
+    </div><!-- end sponsor -->
+
+    <div class="gallery">
+        <div class="container">
+            <h2>Photo Gallery</h2>  
+            <div class="gallery__item-inner">
+            
+                <a href="images/gallery-1.jpg" class="gallery__item-link">
+                  <img src="images/gallery-1.jpg" alt="img" class="gallery__item-img">
+                </a>
+
+                <a href="images/gallery-2.jpg" class="gallery__item-link">
+                    <img src="images/gallery-2.jpg" alt="img" class="gallery__item-img">
+                </a>
+
+                <a href="images/gallery-3.jpg" class="gallery__item-link">
+                    <img src="images/gallery-3.jpg" alt="img" class="gallery__item-img">
+                </a>
+
+                <a href="images/gallery-4.jpg" class="gallery__item-link">
+                    <img src="images/gallery-4.jpg" alt="img" class="gallery__item-img">
+                </a>
+
+                <a href="images/gallery-5.jpg" class="gallery__item-link">
+                    <img src="images/gallery-5.jpg" alt="img" class="gallery__item-img">
+                </a>
+    
+                <a href="images/gallery-6.jpg" class="gallery__item-link">
+                    <img src="images/gallery-6.jpg" alt="img" class="gallery__item-img">
+                </a>
+
+                <a href="images/gallery-7.jpg" class="gallery__item-link">
+                    <img src="images/gallery-7.jpg" alt="img" class="gallery__item-img">
+                </a>
+
+                <a href="images/gallery-2.jpg" class="gallery__item-link">
+                    <img src="images/gallery-2.jpg" alt="img" class="gallery__item-img">
+                </a>
+    
+              </div>
+        </div>
+    </div><!-- end gallery -->
+
+    <div class="contact">
+        <div class="container">  
+            <div class="contact__item">
+                <div class="contact__item-text">
+                    <h3>Dont miss our future updates</h3>
+                    <h2>Get Subscribed Today</h2>
+                </div>
+                <div class="contact__item-form">
+                    <form action="">
+                        <input type="email" name="" placeholder="Enter your email" id="" class="email">
+                        <input type="submit" value="sign up" class="btn">
+                    </form> 
+                </div>
+            </div>
+            <a href="#header"><img src="images/top-btn.png" alt="image" class="top-button"></a>
+        </div>
+    </div><!-- end contact -->
+
+    <div class="footer__top">
+        <div class="container">  
+            <div class="footer__item">
+                <div class="footer__info">
+                    <a class='logo' href='#'>
+                        <img class='logo__img' src='images/logo.png' alt='img'>
+                    </a>
+                    <p>We ara a lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <ul>
+                        <li><a href="#"><img class='logo__img' src='images/footer-icon-1.png' alt='image'></a></li>
+                        <li><a href="#"><img class='logo__img' src='images/footer-icon-2.png' alt='image'></a></li>
+                        <li><a href="#"><img class='logo__img' src='images/footer-icon-3.png' alt='image'></a></li>
+                        <li><a href="#"><img class='logo__img' src='images/footer-icon-4.png' alt='image'></a></li>
+                        <li><a href="#"><img class='logo__img' src='images/footer-icon-5.png' alt='image'></a></li>
+                    </ul>
+                </div>
+                <div class="footer__links">
+                    
+                    <div class="footer__item">
+                        <ul>
+                            <li>About</li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Ticket</a></li>
+                            <li><a href="#">Speaker</a></li>
+                            <li><a href="#">Schedule</a></li>
+                            <li><a href="#">In Press</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__item">
+                        <ul>
+                            <li>Support</li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Register</a></li>
+                            <li><a href="#">Sponsor</a></li>
+                            <li><a href="#">Telegram</a></li>
+                            <li><a href="#">Venue</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__item">
+                        <ul>
+                            <li>FAQ</li>
+                            <li><a href="#">Account</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">How its works</a></li>
+                            <li><a href="#">Payments</a></li>
+                            <li><a href="#">Returns</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div><!-- end footer__top -->
+
+    <footer>
+        <div class="container">
+            <hr> 
+            <p>Copyright © Designer Meet 2025</p>
+        </div>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
