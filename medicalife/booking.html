@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedicaLife</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class='header'>
+        <div class='container'>
+            <div class='header__top'>
+    
+                <a class='logo' href='#'>
+                    <img class='logo__img' src='images/logo.png' alt='img'>
+                </a>
+                
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="index.html" class="menu__link">HOME</a></li>
+                    <li class="menu__item"><a href="about.html" class="menu__link">ABOUT US</a></li>
+                    <li class="menu__item"><a href="service.html" class="menu__link">SERVICES</a></li>
+                    <li class="menu__item"><a href="booking.html" class="menu__link">BOOKING</a></li>
+                </ul>
+
+                <div class="menu-icon">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+
+                <button class="header__btn">
+                    Make Appointment
+                </button>
+            </div>
+
+            <div class="heading"> 
+                <h1 class="heading__title">Best Medical & Healthcare Service For Your Family</h1>
+                <p class="heading__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <button class="heading__btn">Contact Us</button>  
+            </div>
+
+        </div>
+
+    </header><!-- end header -->
+
+    <div class="booking">
+        <div class="container">
+            
+            <div class="booking-form">
+                <h3 class="booking__title">Book an appointment</h3>
+                <form role="form" action="#booking" method="post">
+                    <div class="form__items">
+                        <div class="form__item">
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Full name" required>
+                            <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required>
+                        </div>
+
+                        <div class="form__item">
+                            <input type="telephone" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="form-control" placeholder="Phone: 123-456-7890">
+                            <input type="date" name="date" id="date" value="" class="form-control"> 
+                        </div>
+                        <textarea class="form-textarea" rows="5" id="message" name="message" placeholder="Additional Message"></textarea>
+                        <button class="heading__btn" type="submit">Book Now</button> 
+                    </div> 
+                </form>
+            </div>
+
+        </div>
+    </div><!-- booking -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__items">
+                <div class="footer__item footer__item-text">
+                    <a class='logo' href='#'>
+                        <img class='logo__img' src='images/logo.png' alt='img'>
+                    </a>
+                    <p>We are the most powerful and leading software agency in the world</p>
+                </div>
+                <div class="footer__item">
+                    <ul>
+                        <li>Links</li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Invest</a></li>
+                        <li><a href="#">Tutorial</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <ul>
+                        <li>About</li>
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <ul>
+                        <li>Resorces</li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Stories</a></li>
+                        <li><a href="#">Reviews</a></li>
+                        <li><a href="#">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <ul>
+                        <li>Our Office</li>
+                        <li>
+                            Indonesia
+                            Jl. Griya Permata Hijau no D1 Purwomartani Kalasan 543881
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
