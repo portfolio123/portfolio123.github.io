@@ -64,7 +64,7 @@ header nav.header__nav ul li a:hover {
 }
 .project__element .project_img img {
 	width: 250px;
-	height: 320px;
+	height: 300px;
 }
 .project__element .project_img img:hover {
 	opacity: 0.9;
